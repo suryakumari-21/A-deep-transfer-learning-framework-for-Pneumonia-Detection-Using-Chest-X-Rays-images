@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height:90vh;">
+    <div class="card-ui" style="max-width:780px; width:100%;">
+
+        <h3 class="fw-bold mb-3">
+            A Deep Transfer Learning Framework for Pneumonia Detection
+        </h3>
+
+        <p class="text-muted">
+            This project presents an automated system for pneumonia detection
+            using chest X-ray images, classifying cases into Normal,
+            Bacterial Pneumonia, and Viral Pneumonia.
+        </p>
+
+        <h6 class="fw-bold mt-4">Dataset</h6>
+        <p class="text-muted">
+            A refined version of the Chest X-Ray Pneumonia dataset was used,
+            where pneumonia cases were separated based on their cause.
+        </p>
+
+        <h6 class="fw-bold mt-4">Models Evaluated</h6>
+        <ul class="text-muted">
+            <li>VGG16</li>
+            <li>VGG19</li>
+            <li>ResNet50</li>
+            <li>ResNet101</li>
+            <li><strong>DenseNet121</strong></li>
+        </ul>
+
+        <h6 class="fw-bold mt-4">Best Performing Model</h6>
+        <p class="text-muted">
+            DenseNet121 achieved the highest accuracy of <strong>93%</strong>
+            and was selected for deployment.
+        </p>
+
+        <p class="text-muted mt-4">
+            This system is intended strictly for academic and research purposes.
+        </p>
+
+    </div>
+</div>
+{% endblock %}
